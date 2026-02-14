@@ -1,0 +1,25 @@
+@echo off
+title Instalador Ricardo IA - Conquer
+color 0A
+
+echo ==========================================
+echo   INSTALADOR AUTOMATICO - RICARDO IA
+echo ==========================================
+echo.
+
+cd /d "%USERPROFILE%\Desktop\ricardo-ia-v2"
+
+echo Pasta atual:
+cd
+echo.
+
+echo Instalando dependencias...
+npm install
+
+echo.
+echo Iniciando servidor...
+npm run dev
+
+pause
+notepad start.bat
+
